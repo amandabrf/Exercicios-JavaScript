@@ -98,7 +98,3 @@ if (escolha=='1'){
         }
     }
 }
-
-//questao10
-amandaagnesbrandao@gmail.com
-sidepark401
