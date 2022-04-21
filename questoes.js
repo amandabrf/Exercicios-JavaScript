@@ -98,3 +98,26 @@ if (escolha=='1'){
         }
     }
 }
+
+//Resolvida na aula dia 20/04
+class Vendedor{
+  nome; 
+  comissao;
+  
+valorTotalVendas=0;
+adicionarVendas(valor){
+  this.valorTotalVendas= this.valorTotalVendas+ valor;
+}
+calcularComissao (){
+ this.comissao= this.valorTotalVendas*0.05
+}
+}
+
+var vendedor1=  new Vendedor();
+vendedor1.nome= "Gabriel Da Silva";
+vendedor1.adicionarVendas(25);
+vendedor1.adicionarVendas(35);
+vendedor1.adicionarVendas(45);
+vendedor1.adicionarVendas(55);
+vendedor1.calcularComissao();
+console.log(vendedor1)
