@@ -139,3 +139,68 @@ this.operador= "mult"
 
 calculadora= new Calculadora()
 calculadora.calcular()
+
+// o objeto é a instancia de uma classe
+//os metodos modificam os atributos da classe.
+
+
+//Questao resolvida em sala dia 27/04
+
+class Livro{
+  titulo;
+  autor;
+  quantidadeEmEstoque;
+  emprestimos= [];
+
+ adicionarEmprestimo(emprestimo){
+   this.emprestimos.push(emprestimo);
+   this. quantidadeEmEstoque= this.quantidadeEmEstoque-1
+ }
+}
+
+var harryPotter= new Livro();
+harryPotter.titulo= "Harry Potter e A Ordem da Fênix";
+harryPotter.autor="J.K Rowling";
+harryPotter.quantidadeEmEstoque=10;
+
+class Emprestimo{
+  cliente;
+  quantidadeDiasRestante;
+}
+
+var emprestimo1= new Emprestimo();
+emprestimo1.cliente= "Amanda"
+emprestimo1.quantidadeDiasRestante= 2;
+
+harryPotter.adicionarEmprestimo(emprestimo1);
+
+var emprestimo2= new Emprestimo();
+emprestimo2.cliente= "Julia"
+emprestimo2.quantidadeDiasRestante=3 
+
+harryPotter.adicionarEmprestimo(emprestimo2);
+
+console.log (harryPotter);
+
+var senhorDosAneis= new Livro();
+senhorDosAneis.titulo="Senhor dos Aneis e as Duas Torres"
+senhorDosAneis.autor= "J.R. Tolkein";
+senhorDosAneis.quantidadeEmEstoque=5;
+
+var emprestimo3= new Emprestimo();
+emprestimo3.cliente= "Elias";
+emprestimo3.quantidadeDiasRestante= 4;
+
+senhorDosAneis.adicionarEmprestimo(emprestimo3);
+console.log (senhorDosAneis)
+var evelynHugo= new Livro();
+evelynHugo.titulo="Os Sete Maridos de Evelyn Hugo"
+evelynHugo.autor= "Taylor Jenkins Reid"
+evelynHugo.quantidadeEmEstoque=7;
+
+var emprestimo4= new Emprestimo()
+emprestimo4.cliente="Yasmin";
+emprestimo4.quantidadeDiasRestante= 3;
+
+evelynHugo.adicionarEmprestimo(emprestimo4);
+console.log (evelynHugo)
